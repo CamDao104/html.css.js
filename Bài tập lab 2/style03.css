@@ -1,0 +1,156 @@
+/* Hero Section with Background Opacity */
+.hero-section {
+    position: relative;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last number (0.5 for 50%) */
+    z-index: 1;
+}
+
+.hero-content, .hero-section nav {
+    position: relative;
+    z-index: 2; /* This keeps the content above the overlay */
+}
+
+/* Update the nav link color if needed */
+.hero-section nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.hero-section {
+    background: url('https://plus.unsplash.com/premium_photo-1670601778519-7c9cd5a29cac') no-repeat center center/cover;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px;
+    background: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Video Section */
+.video-section {
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-wrapper iframe {
+    width: 80%;
+    height: 400px;
+    max-width: 800px;
+    border: none;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 40px;
+    background: white;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #d9534f;
+}
+
+/* Footer Section */
+footer {
+    background: #d9534f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
